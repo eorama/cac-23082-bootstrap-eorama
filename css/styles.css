@@ -1,0 +1,285 @@
+/* << ESTILOS DE CARACTER GENERAL >> */
+    * {
+        margin: auto;
+        padding: 0;
+        --dark-text: #21242A;
+        --light-text: #F5F5F5;
+        --bg-section: #353A40;
+        --bg-footer: #1C3947;
+        --btn-primary: #28A745;
+        --btn-accent: #96C93E;
+        --btn-tech01: #FEC107;
+        --btn-tech02: #17A2B9;
+        --btn-tech03: #6C757D;
+        --btn-tech04: #DC3446;
+    }
+
+    body {
+        font-family: 'Roboto', sans-serif;
+        font-family: 'Work Sans', sans-serif;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Roboto', sans-serif;
+    }
+
+    p {
+        font-family: 'Work Sans', sans-serif;
+    }
+
+    a {
+        font-family: 'Work Sans', sans-serif;
+    }
+
+    li {
+        list-style: none;
+    }
+/* Header */
+    .ht-header {
+        height: 12vh;
+    }
+    .bg-header {
+        background-color: var(--bg-section);
+        z-index: 999;
+    }
+    .bg-header img {
+        width: 90px;
+    }
+/* Footer */
+    .bg-footer {
+        background-color: var(--bg-footer);
+    }
+
+    .nav-item a:hover {
+        color: var(--btn-accent);
+    }
+
+
+/* << INICIO >> */
+    /* Header */
+    .navbar-toggler {
+        border-color: #fff;
+    }
+    /* Hero */
+    .hero-conferencia {
+        max-height: 88vh;
+    }
+    .carousel-inner {
+        max-height: 88vh;
+    }
+    .carousel-item img {
+        position: relative;
+    }
+    .carousel-item::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: 1;
+    }
+    .carousel-item .carousel-caption {
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        transform: translate(10%, -50%);
+        z-index: 2;
+        color: #fff;
+    }
+    /* Oradores */
+
+    /* Área Ciudad */
+    .bg-bsas {
+        background-color: var(--bg-section);
+    }
+    .img-caba img {
+        object-fit: cover;
+    }
+    .image-caba {
+        background-image: url(/assets/img/caba.png);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        z-index: 2;
+    }
+    /* Formulario */
+
+/* << TICKETS >> */
+    /* XX */
+    .hero-container-tickets {
+        height: 50vh;
+        background-image: linear-gradient(to right, #0000009c, #000000e2), url(/assets/img/integrador-tickets.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+/* << CONFERENCIA >> */
+    /* XX */
+    .hero-container-conferencia {
+        height: 50vh;
+        background-image: linear-gradient(to right, #0000009c, #000000e2), url(/assets/img/integrador-conference.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+/* << CONTACTO >> */
+    /* XX */
+    .hero-container-contacto {
+        height: 50vh;
+        background-image: linear-gradient(to right, #0000009c, #000000e2), url(/assets/img/integrador-contact.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+/* << ESTUDIANTES >> */
+    /* XX */
+    .hero-container-estudiantes {
+        height: 50vh;
+        background-image: linear-gradient(to right, #0000009c, #000000e2), url(/assets/img/integrador-students.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+/* << FAQ >> */
+    /* XX */
+    .hero-container-faq {
+        height: 50vh;
+        background-image: linear-gradient(to right, #0000009c, #000000e2), url(/assets/img/integrador-faq.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+/* << PRENSA >> */
+    /* XX */
+    .hero-container-prensa {
+        height: 50vh;
+        background-image: linear-gradient(to right, #0000009c, #000000e2), url(/assets/img/integrador-press.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .main-press {
+        height: 30vh;
+    }
+/* << PRIVACIDAD >> */
+    /* XX */
+    .hero-container-privacidad {
+        height: 50vh;
+        background-image: linear-gradient(to right, #0000009c, #000000e2), url(/assets/img/integrador-privacy.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+/* << TERMINOS >> */
+    /* XX */
+    .hero-container-terminos {
+        height: 50vh;
+        background-image: linear-gradient(to right, #0000009c, #000000e2), url(/assets/img/integrador-tyc.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+
+
+/* INICIO DE MODULO RESPONSIVE */
+
+/* Tablets */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Estilos que se aplican solo cuando la pantalla tiene una anchura entre 768px y 1024px */
+    
+    /* Header Nav */
+    
+    /* Hero */
+    .hero-conferencia {
+        max-height: 90vh;
+    }
+    .carousel-inner {
+        max-height: 50vh;
+    }
+    .carousel-item img {
+        position: relative;
+        width: 150%;
+    }
+    .carousel-item::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: 1;
+    }
+    .carousel-item .carousel-caption {
+        position: absolute;
+        top: 30%;
+        left: 10%;
+        transform: translate(5%, -15%);
+        z-index: 2;
+        color: #fff;
+    }
+    /* Oradores */
+    
+    /* Ciudad */
+
+    /* Footer */
+    .bg-footer .container {
+        padding: 0;
+    }
+    .footer-nav {
+        flex-direction: column;
+        text-align: center;
+      }
+    .footer-nav ul {
+        width: 100%;
+        padding: 0;
+    }
+    .nav-item {
+        margin: 0.5em 0;
+        padding: 0.2em 0.8em;
+    }
+}
+
+/* Moviles */
+@media screen and (max-width: 767px) {
+    /* Estilos que se aplican solo cuando la pantalla tiene una anchura con un maximo de 767px */
+    
+    /* Header Nav */
+    .bg-header {
+        height: initial;
+    }
+    /* Hero */
+    
+    /* Oradores */
+    
+    /* Ciudad */
+
+    /* Formulario */
+    
+    /* Footer */
+    .bg-footer .container {
+        padding: 0;
+    }
+    
+    .footer-nav {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-nav ul {
+        width: 100%;
+        padding: 0;
+    }
+    .nav-item {
+        margin: 0.5em 0;
+        padding: 0.2em 0.8em;
+    }
+}
+
+/* Laptops y Superior */
+@media screen and (min-width: 992px) {
+    /* Ciudad */
+
+}
